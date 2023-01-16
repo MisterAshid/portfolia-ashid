@@ -1,4 +1,4 @@
-.container {
+.Container {
   width: 100%;
   min-height: 100vh;
   background-color: rgb(11, 13, 43);
@@ -6,6 +6,10 @@
   justify-content: center;
   align-items: center;
   color: white;
+}
+.particleContainer {
+  position: relative;
+  z-index: -1;
 }
 
 .imgCont {

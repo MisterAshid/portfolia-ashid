@@ -8,6 +8,7 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
 import "../../App.css";
+import "./main.css";
 
 const Main = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -20,7 +21,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div>
+    <div className="particleContainer">
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -28,7 +29,7 @@ const Main = () => {
         options={{
           background: {
             color: {
-              value: "#0d47a1",
+              value: "#c9e4ca",
             },
           },
           fpsLimit: 120,
@@ -75,7 +76,7 @@ const Main = () => {
                 default: "bounce",
               },
               random: false,
-              speed: 6,
+              speed: 1,
               straight: false,
             },
             number: {
@@ -98,7 +99,7 @@ const Main = () => {
           detectRetina: true,
         }}
       />
-      <div className="container">
+      <div className="Container">
         <div className="hero">
           <Text />
           <Link />
